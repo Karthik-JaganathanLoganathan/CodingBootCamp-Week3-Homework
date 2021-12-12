@@ -48,10 +48,39 @@ var generatePassword = () => {
   }
 }
 
+
+function uppercase (){
 let Uppercasechoice = confirm( "Do you wish to have Uppercase Alphabets in your Password");
+if(Uppercasechoice)
+{}
+else{
+  return " ";
+}}
+
+function lowercase (){
 let Lowercasechoice = confirm( "Do you wish to have Lowercase Alphabets in your Password");
+if(Lowercasechoice)
+{}
+else{
+  return " ";
+}}
+
+function number(){
 let Numberchoice = confirm( "Do you wish to have Numbers in your Password");
+if(Numberchoice)
+{}
+else{
+  return " ";
+}}
+
+function number(){
 let SpecialCharchoice = confirm( "Do you wish to have Special Characters in your Password");
+if(SpecialCharchoice)
+{}
+else{
+  return " ";
+}}
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
