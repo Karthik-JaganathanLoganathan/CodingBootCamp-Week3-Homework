@@ -37,5 +37,21 @@ function writePassword() {
 
 }
 
+var generatePassword = () => {
+  const PasswordLength = window.prompt(" Enter the length of your password");
+  if (PasswordLength < 8 || PasswordLength > 128 ||PasswordLength == "" ||!Number(PasswordLength)
+  ) {
+    alert(
+      "Password length should be minimum 8 and maximum of 128"
+    );
+    return " ";
+  }
+}
+
+let Uppercasechoice = confirm( "Do you wish to have Uppercase Alphabets in your Password");
+let Lowercasechoice = confirm( "Do you wish to have Lowercase Alphabets in your Password");
+let Numberchoice = confirm( "Do you wish to have Numbers in your Password");
+let SpecialCharchoice = confirm( "Do you wish to have Special Characters in your Password");
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
